@@ -19,3 +19,14 @@ Route::get('/van', function () {
     $papa="papa";
     return $papa;
 });
+
+Route::get('/', function () {
+    $mama="mama";
+    return view('/welcome',compact("mama"));
+});
+
+Route::get('/sum', function () {
+    $facteur1="1";
+    $facteur2="2";
+    return view('/sum',compact("facteur1","facteur2"));
+});
