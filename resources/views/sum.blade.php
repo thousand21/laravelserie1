@@ -8,9 +8,9 @@
 </head>
 <body>
     
-    <p>{{$facteur1}}+{{$facteur2}}=  </p> 
-    <p>{{$facteur1}}-{{$facteur2}}=  </p> 
-    <p>Les valeurs ne sont ni additionnables ni soustrayables </p> 
+    <p> {{$facteur1}}+{{$facteur2}}= {{$facteur1+$facteur2}} </p> 
+    <p>{{$facteur1}}-{{$facteur2}}= {{$facteur1-$facteur2}} </p> 
+   
     
 </body>
 </html>

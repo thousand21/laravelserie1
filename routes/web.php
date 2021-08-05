@@ -17,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/van', function () {
     $papa="papa";
-    return $papa;
+    return "<h2>{$papa}</h2>";
 });
 
-Route::get('/', function () {
-    $mama="mama";
-    return view('/welcome',compact("mama"));
+Route::get('/papa/{var}', function ($p) {
+    
+    return view('/welcome',compact("p"));
 });
 
 Route::get('/sum', function () {
